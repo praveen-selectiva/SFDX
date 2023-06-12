@@ -1,0 +1,15 @@
+<apex:component access="global">
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:EmailTempCmpApp", function() {
+          $Lightning.createComponent("c:EmailTempCmp",
+               {},
+              "lightning",
+              function(cmp) {}
+          );
+        });
+    </script>
+</apex:component>
