@@ -1,0 +1,22 @@
+<!--
+  @file-description  : 
+  @author            : Praveen Malviya
+  @last modified on  : 01-30-2023
+  @last modified by  : Praveen Malviya
+-->
+<template>
+    <div>
+        <lightning-button label="Load" onclick={load}></lightning-button>
+    </div>
+    <div>
+        <ul>
+            <template for:each={display} for:item="acc">
+                <li key={acc.Id}>{acc.Name}</li>
+            </template>
+        </ul>
+       
+    </div>
+    <div>
+        <lightning-button label="nav" onclick={handleNav}></lightning-button>
+    </div>
+</template>
